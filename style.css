@@ -1,0 +1,51 @@
+@font-face {
+    font-family: sos;
+    src: url(font.ttf);
+}
+.container{
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    flex-direction: column;
+    position: relative;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    margin: 2px;
+    transition: 1s transform;
+    border: 1px solid red;
+    font-family: sos;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.box:hover{
+    transform: scale(90%);
+    transition: 0.5s transform;
+}
+.scale{
+    transform: scale(50%);
+    transition: 0.5s transform;
+}
+.row{
+    display: flex;
+}
+canvas{
+    position:absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.block{
+    pointer-events: all;
+}
